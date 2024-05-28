@@ -1,11 +1,13 @@
-import { Select } from "antd";
+import { Card } from "./features/Components/Card";
+import { Navbar } from "./features/Components/Navbar";
+import { Profile } from "./features/Components/Profile";
 
 export function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Select />
-      <p>Monie point</p>
+      <Card iconString="" buttonText="" header="" textPercent="" />
+      <Profile country="" name="" score="" />
+      <Navbar />
     </>
   );
 }
