@@ -16,28 +16,42 @@ export const DayCalendar: React.FC = () => {
   };
 
   return (
-    <div>
-      <div className="flex justify-evenly">
+    <div className=" m-2">
+      <div className="flex justify-between p-2">
         <Icon
           icon="oui:arrow-left"
-          width="40"
-          height="40"
+          width="30"
+          height="30"
           style={{ color: "#7782c1" }}
+          className="border border-[#7782c1] rounded p-2 cursor-pointer"
         />
         <h2 className="font-bold text-center">September</h2>
         <Icon
           icon="oui:arrow-right"
-          width="40"
-          height="40"
+          width="30"
+          height="30"
           style={{ color: "#7782c1" }}
+          className="border border-[#7782c1] rounded p-2 cursor-pointer"
         />
       </div>
-      <Calendar
-        fullscreen={false}
-        headerRender={() => null} // Hide header
-        value={dayjs().month(8).startOf("month")} // Initialize to September
-        fullCellRender={dateFullCellRender} // Customize date rendering
-      />
+
+      <div
+        className='p-2'
+        style={{
+          // width: "400px",
+          height: "100px",
+          // border: "1px solid #ccc",
+          borderRadius: "8px",
+          overflow: "hidden",
+        }}
+      >
+        <Calendar
+          fullscreen={false}
+          headerRender={() => null} // Hide header
+          value={dayjs().month(8).startOf("month")} // Initialize to September
+          dateFullCellRender={dateFullCellRender} // Customize date rendering
+        />
+      </div>
     </div>
   );
 };

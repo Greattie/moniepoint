@@ -1,6 +1,5 @@
 import React from "preact/compat";
 import { Icon } from "@iconify/react";
-import { Button } from "antd";
 
 interface ICardProps {
   iconString: string;
@@ -27,10 +26,10 @@ export const Card: React.FC<ICardProps> = ({
           style={{ color: "white" }}
         />
       </div>
-      <h2 className="font-bold text-xl text-center p-2">{header} test</h2>
-      <p className="text-center">{textPercent} 100%</p>
+      <h2 className="font-bold text-xl text-center p-2">{header}</h2>
+      <p className="text-center">{textPercent}</p>
       <div className='mx-auto'>
-        <Button className="ml-[50px]">{ buttonText} complete</Button>
+        <button className="ml-[50px] border border-red-500">{ buttonText}</button>
       </div>
     </div>
   );

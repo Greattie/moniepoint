@@ -49,7 +49,7 @@ export const Homepage = () => {
       </div>
 
       <div className="flex justify-between p-2 m-2">
-        <h2>Your lesson</h2>
+        <h2 className="font-bold text-lg">Your lesson</h2>
         <Icon
           icon="oui:arrow-right"
           width="30"
@@ -79,7 +79,7 @@ export const Homepage = () => {
         />
       </div>
 
-      <div className='grid grid-rows-2 gap-5'>
+      <div className="grid grid-rows-2 gap-5">
         <Profile country="Taiwan" name="Yasmin Lee" score="1230" />
         <Profile country="Spain" name="Guy Hawkins" score="1130" />
       </div>

@@ -1,11 +1,12 @@
 import { Navbar } from "./features/Components/Navbar";
 import { Homepage } from "./features/Homepage";
+import { Skills } from "./features/Skills";
 
 export function App() {
   return (
-    <div className="fixed top-0 -z-10 h-full w-full">
-      <div className="bg-[#edf6ff] overflow-hidden absolute top-0 z-[-2] h-screen w-screen"></div>
+    <div className=" w-[30rem] bg-[#edf6ff] m-auto fixed">
       <Homepage />
+      {/* <Skills /> */}
       <Navbar />
     </div>
   );
