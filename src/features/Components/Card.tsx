@@ -19,8 +19,8 @@ export const Card: React.FC<ICardProps> = ({
     <div className="border border-red-500 w-48 rounded-lg h-52">
       <div className="bg-indigo-400 rounded-full w-[35%] h-[35%] mx-auto my-2">
         <Icon
-          // icon={`${iconString}`}
-          icon="tabler:book"
+          icon={`${iconString}`}
+          // icon="tabler:book"
           width="60"
           height="60"
           className="mx-auto pt-3"
