@@ -2,7 +2,8 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 export const Navbar = () => {
   return (
-    <div className="grid grid-cols-4 bg-white p-4 w-full inset-x-0 bottom-0 rounded-3xl fixed shadow-custom">
+    // <div className="fixed bottom-0 flex border border-orange-600">
+    <div className="grid grid-cols-4 bg-white w-[29rem] p-4 bottom-0 rounded-t-3xl absolute shadow-custom">
       <Icon
         icon="mage:home"
         width="40"

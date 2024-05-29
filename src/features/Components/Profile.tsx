@@ -9,7 +9,7 @@ interface IProfileProps {
 }
 export const Profile: React.FC<IProfileProps> = ({ country, name, score }) => {
   return (
-    <div className="grid grid-cols-3 border border-[#70749c] p-4 items-center rounded">
+    <div className="grid grid-cols-3  bg-white p-4 items-center rounded-2xl shadow-customProfile">
       <img src={profile} alt="" className="w-10 h-10 rounded-full" />
       <div>
         <h2>{name}</h2>

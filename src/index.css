@@ -7,8 +7,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Circular progress bar */
 :where(.css-dev-only-do-not-override-j9bb5n).ant-progress
   .ant-progress-inner:not(.ant-progress-circle-gradient)
   .ant-progress-circle-path {
   stroke: #f56523;
+}
+
+/* Calendar*/
+.ant-picker-calendar .ant-picker-panel-container {
+  background-color: none;
+}
+
+.ant-picker-calendar .ant-picker-content {
+  background-color: transparent;
 }
