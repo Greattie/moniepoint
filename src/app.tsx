@@ -1,6 +1,6 @@
 import { Navbar } from "./features/Components/Navbar";
 import { Homepage } from "./features/Homepage";
-import { Skills } from "./features/Skills";
+// import { Skills } from "./features/Skills";
 
 export function App() {
   return (
