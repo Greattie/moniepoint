@@ -1,18 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@100..900&family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* Circular progress bar */
-/* :where(.css-dev-only-do-not-override-j9bb5n).ant-progress
-  .ant-progress-inner:not(.ant-progress-circle-gradient)
-  .ant-progress-circle-path {
-  stroke: #f56523;
-} */
+:root {
+  font-family: "Inter", sans-serif;
+}
 
 /* Calendar*/
 .ant-picker-calendar .ant-picker-panel-container {
@@ -22,10 +22,3 @@
 .ant-picker-calendar .ant-picker-content {
   background-color: transparent;
 }
-
-/* Activity progress bar
-:where(.css-dev-only-do-not-override-j9bb5n).ant-progress
-  .ant-progress-success-bg,
-:where(.css-dev-only-do-not-override-j9bb5n).ant-progress .ant-progress-bg {
-  background-color: #7782c1;
-} */
