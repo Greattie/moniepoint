@@ -6,8 +6,8 @@ import { Skills } from "./features/Skills";
 export function App() {
   const [activeComponent, setActiveComponent] = useState<string>("Homepage");
   return (
-    <div className="min-w-[20rem] w-[28rem] bg-[#edf6ff] m-auto h-full rounded">
-      {activeComponent === "Homepage" && <Homepage />}
+    <div className="w-[28rem] bg-[#edf6ff] m-auto h-full absolute rounded min-w-[20rem] ">
+        {activeComponent === "Homepage" && <Homepage />}
       {activeComponent === "Skills" && <Skills />}
       <Navbar
         activeComponent={activeComponent}
