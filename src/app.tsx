@@ -1,13 +1,18 @@
+import { useState } from "preact/hooks";
 import { Navbar } from "./features/Components/Navbar";
 import { Homepage } from "./features/Homepage";
-// import { Skills } from "./features/Skills";
+import { Skills } from "./features/Skills";
 
 export function App() {
+  const [activeComponent, setActiveComponent] = useState<string>("Homepage");
   return (
-    <div className=" w-[30rem] bg-[#edf6ff] m-auto fixed">
-      <Homepage />
-      {/* <Skills /> */}
-      <Navbar />
+    <div className=" w-[28rem] bg-[#edf6ff] m-auto h-screen absolute rounded">
+      {activeComponent === "Homepage" && <Homepage />}
+      {activeComponent === "Skills" && <Skills />}
+      <Navbar
+        activeComponent={activeComponent}
+        setActiveComponent={setActiveComponent}
+      />
     </div>
   );
 }

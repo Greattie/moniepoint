@@ -16,27 +16,27 @@ export const DayCalendar: React.FC = () => {
   };
 
   return (
-    <div className=" m-2">
+    <div className=" m-2 py-2">
       <div className="flex justify-between p-2">
         <Icon
           icon="oui:arrow-left"
-          width="30"
-          height="30"
+          width="20"
+          height="20"
           style={{ color: "#7782c1" }}
-          className="border border-[#7782c1] rounded p-2 cursor-pointer"
+          className="border border-[#7782c1] rounded p-1 cursor-pointer"
         />
         <h2 className="font-bold text-center">September</h2>
         <Icon
           icon="oui:arrow-right"
-          width="30"
-          height="30"
+          width="20"
+          height="20"
           style={{ color: "#7782c1" }}
-          className="border border-[#7782c1] rounded p-2 cursor-pointer"
+          className="border border-[#7782c1] rounded p-1 cursor-pointer"
         />
       </div>
 
       <div
-        className='p-2'
+        className="p-2"
         style={{
           // width: "400px",
           height: "100px",
