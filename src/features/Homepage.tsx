@@ -40,6 +40,7 @@ export const Homepage = () => {
             aria-label=""
             aria-labelledby=""
             trailColor="#ff9766"
+            strokeColor="#f56523"
           />
         </div>
 
@@ -92,8 +93,13 @@ export const Homepage = () => {
       </div>
 
       <div className="grid grid-rows-2 gap-5">
-        <Profile country="Taiwan" name="Yasmin Lee" score="1230" imgSrc={ prof} />
-        <Profile country="Spain" name="Guy Hawkins" score="1130" imgSrc={ guy} />
+        <Profile
+          country="Taiwan"
+          name="Yasmin Lee"
+          score="1230"
+          imgSrc={prof}
+        />
+        <Profile country="Spain" name="Guy Hawkins" score="1130" imgSrc={guy} />
       </div>
     </div>
   );

@@ -3,9 +3,8 @@ import { DayCalendar } from "./Components/DayCalendar";
 import { Card } from "./Components/Card";
 
 export const Skills = () => {
-    
   return (
-    <div className="w-[98%] mx-auto">
+    <div className="w-[98%] mx-auto px-2">
       <DayCalendar />
 
       <div className="flex justify-between items-center p-2 my-2 mx-2">
@@ -19,7 +18,7 @@ export const Skills = () => {
         />
       </div>
       <div className="grid grid-rows-2 gap-y-5 p-5">
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-3">
           <Card
             buttonText="Completed"
             header="Reading"
@@ -34,7 +33,7 @@ export const Skills = () => {
             textPercent="80%"
           />
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-3">
           <Card
             buttonText="Completed"
             header="Speaking"
