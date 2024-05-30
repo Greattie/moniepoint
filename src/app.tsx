@@ -6,8 +6,12 @@ import { Skills } from "./features/Skills";
 export function App() {
   const [activeComponent, setActiveComponent] = useState<string>("Homepage");
   return (
-    <div className="w-[28rem] bg-[#edf6ff] m-auto h-full absolute rounded min-w-[20rem] ">
-        {activeComponent === "Homepage" && <Homepage />}
+    <div className="w-[28rem] bg-[#edf6ff] overflow-x-hidden m-auto  rounded">
+      <div className="fixed top-0 h-full w-full -z-10 bg-[#edf6ff]">
+        <div className="bg-[#edf6ff] absolute top-0 z-[-2] h-screen "></div>
+      </div>
+
+      {activeComponent === "Homepage" && <Homepage />}
       {activeComponent === "Skills" && <Skills />}
       <Navbar
         activeComponent={activeComponent}
