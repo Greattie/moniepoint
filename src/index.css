@@ -22,3 +22,10 @@
 .ant-picker-calendar .ant-picker-content {
   background-color: transparent;
 }
+
+/* Activity progress bar */
+:where(.css-dev-only-do-not-override-j9bb5n).ant-progress
+  .ant-progress-success-bg,
+:where(.css-dev-only-do-not-override-j9bb5n).ant-progress .ant-progress-bg {
+  background-color: #7782c1;
+}

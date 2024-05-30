@@ -14,9 +14,15 @@ export const Card: React.FC<ICardProps> = ({
   textPercent,
   buttonText,
 }) => {
+  const buttonClasses =
+    buttonText === "Completed"
+      ? "bg-orange-500 text-white"
+      : buttonText === "Good work"
+      ? "border border-orange-500 text-orange-500 bg-transparent"
+      : "border border-red-500";
   return (
-    <div className="border border-red-500 w-48 rounded-lg h-52">
-      <div className="bg-indigo-400 rounded-full w-[35%] h-[35%] mx-auto my-2">
+    <div className="bg-white w-48 rounded-lg h-60">
+      <div className="bg-indigo-400 rounded-full w-[35%] h-[30%] mx-auto my-4">
         <Icon
           icon={`${iconString}`}
           // icon="tabler:book"
@@ -26,10 +32,14 @@ export const Card: React.FC<ICardProps> = ({
           style={{ color: "white" }}
         />
       </div>
-      <h2 className="font-bold text-xl text-center p-2">{header}</h2>
+      <h2 className="font-bold text-lg text-center p-1">{header}</h2>
       <p className="text-center">{textPercent}</p>
-      <div className='mx-auto'>
-        <button className="ml-[50px] border border-red-500">{ buttonText}</button>
+      <div className="mx-auto">
+        <button
+          className={`ml-[50px] px-4 py-1 my-2 rounded-lg text-sm ${buttonClasses}`}
+        >
+          {buttonText}
+        </button>
       </div>
     </div>
   );
